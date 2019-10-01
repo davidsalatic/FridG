@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHealthScore"
+        app:layout_constraintTop_toBottomOf="@+id/tvHealthScore">
+
+        <Button
+            android:id="@+id/btnViewSavedRecipe"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:autoLink="web"
+            android:text="@string/view_recipe"
+            app:layout_constraintBottom_toTopOf="@+id/tvMissingIngredients"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:drawable/ic_menu_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSource" />
+
+        <ImageView
+            android:id="@+id/recipeImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:srcCompat="@drawable/ic_me" />
+
+        <ImageView
+            android:id="@+id/icHealthScore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:srcCompat="@drawable/ic_healthscore" />
+
+        <ImageView
+            android:id="@+id/icLikes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/icHealthScore"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:srcCompat="@drawable/ic_likes" />
+
+        <ImageView
+            android:id="@+id/icTime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/icLikes"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:srcCompat="@drawable/ic_time" />
+
+        <ImageView
+            android:id="@+id/icServings"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            app:layout_constraintEnd_toStartOf="@+id/icTime"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:srcCompat="@drawable/ic_servings" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="176dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Title"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:fontFamily="casual"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMissingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="36dp"
+            android:text="@string/missing"
+            android:textSize="8sp"
+            app:fontFamily="casual"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMissingIngredients"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:lines="3"
+            android:singleLine="false"
+            android:text="Apples,..."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="8sp"
+            app:fontFamily="casual"
+            app:layout_constraintEnd_toStartOf="@+id/btnSave"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipeImage" />
+
+        <TextView
+            android:id="@+id/tvHealthScore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="16"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icHealthScore" />
+
+        <TextView
+            android:id="@+id/tvLikes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="16"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvHealthScore"
+            app:layout_constraintTop_toBottomOf="@+id/icLikes" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="16"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvLikes"
+            app:layout_constraintTop_toBottomOf="@+id/icTime" />
+
+        <TextView
+            android:id="@+id/tvServings"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:gravity="center"
+            android:text="16"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvTime"
+            app:layout_constraintTop_toBottomOf="@+id/icServings" />
+
+        <TextView
+            android:id="@+id/tvSource"
+            android:layout_width="143dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:text="Spoonacular"
+            android:textSize="8sp"
+            app:fontFamily="casual"
+            app:layout_constraintBottom_toTopOf="@+id/tvMissingIngredients"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSourceText"
+            android:layout_width="28dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:text="@string/source"
+            android:textSize="8sp"
+            app:fontFamily="casual"
+            app:layout_constraintBottom_toTopOf="@+id/tvMissingIngredients"
+            app:layout_constraintEnd_toStartOf="@+id/tvSource" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

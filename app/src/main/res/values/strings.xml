@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FridG</string>
+    <string name="my_fridge">My Fridge</string>
+    <string name="recipes">Recipes</string>
+    <string name="me">Me</string>
+    <string name="search_ingredients">Add your first ingredient by searching...</string>
+    <string name="api_key">de4156cf6654453082816ada7ab526f3</string>
+    <string name="view_recipe">View recipe</string>
+    <string name="missing">Missing:</string>
+    <string name="source">Source:</string>
+    <string name="vegan">Vegan</string>
+    <string name="vegeterian">Vegetarian</string>
+    <string name="cheap">Cheap</string>
+    <string name="healthy">Healthy</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="main_course">Main</string>
+    <string name="desert">Desert</string>
+    <string name="appetizer">Appetizer</string>
+    <string name="salad">Salad</string>
+    <string name="side_dish">  Side</string>
+    <string name="snack">Snack</string>
+    <string name="drink">Drink</string>
+    <string name="saved_recipes">Saved Recipes</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="create_recipe_card">Create a recipe card</string>
+    <string name="instructions_use_to_separate_steps">Instructions - Use ⏎ to separate steps.</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="start_typing_to_add_ingredients">Start typing to add ingredients...</string>
+    <string name="recipe_title">Recipe title</string>
+    <string name="servings">Servings</string>
+    <string name="prep_mins">Prep mins</string>
+    <string name="chef">Chef</string>
+</resources>

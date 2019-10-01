@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recipes_background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFilter"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:id="@+id/llDishTypes2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/llDishTypes"
+            app:layout_constraintStart_toEndOf="@+id/llPreference"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/cbBreakfast"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/breakfast" />
+
+            <CheckBox
+                android:id="@+id/cbMainCourse"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/main_course" />
+
+            <CheckBox
+                android:id="@+id/cbDessert"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/desert" />
+
+            <CheckBox
+                android:id="@+id/cbAppetizer"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/appetizer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDishTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/cbSalad"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/salad" />
+
+            <CheckBox
+                android:id="@+id/cbSideDish"
+                android:layout_width="match_parent"
+                android:theme="@style/checkBoxStyle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/side_dish" />
+
+            <CheckBox
+                android:id="@+id/cbSnack"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/snack" />
+
+            <CheckBox
+                android:id="@+id/cbDrink"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/drink" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/cbVegan"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vegan" />
+
+            <CheckBox
+                android:id="@+id/cbVegeterian"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vegeterian" />
+
+            <CheckBox
+                android:id="@+id/cbCheap"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cheap" />
+
+            <CheckBox
+                android:id="@+id/cbHealthy"
+                android:theme="@style/checkBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/healthy" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

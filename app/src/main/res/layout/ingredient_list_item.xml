@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ingredientImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_noimage"
+        app:riv_border_color="@android:color/tertiary_text_light"
+        app:riv_border_width="0.5dip"
+        app:riv_oval="true"
+        app:riv_tile_mode="repeat" />
+
+
+    <TextView
+        android:id="@+id/tvIngredientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:textSize="18sp" />
+
+</LinearLayout>
